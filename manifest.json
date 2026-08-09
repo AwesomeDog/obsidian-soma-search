@@ -1,0 +1,9 @@
+{
+  "id": "soma-search",
+  "name": "Soma Search",
+  "version": "0.1.0",
+  "minAppVersion": "1.13.0",
+  "description": "Search the current vault through a managed local Soma server.",
+  "author": "AwesomeDog",
+  "isDesktopOnly": true
+}

@@ -1,0 +1,19 @@
+{
+  "name": "obsidian-soma-search",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Search an Obsidian vault through a managed local Soma server.",
+  "author": "AwesomeDog",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit && node esbuild.config.mjs production",
+    "deploy": "node scripts/deploy.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.1",
+    "obsidian": "^1.13.1",
+    "typescript": "^7.0.2"
+  }
+}
