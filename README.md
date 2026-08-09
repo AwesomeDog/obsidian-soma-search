@@ -38,6 +38,9 @@ brew tap AwesomeDog/tap && brew trust AwesomeDog/tap && brew install AwesomeDog/
 # on Linux
 curl -fsSL https://github.com/AwesomeDog/soma/releases/latest/download/soma-linux-x64 -o soma
 chmod +x soma && sudo mv soma /usr/local/bin/
+
+# then run below to make sure it works
+soma sync
 ```
 
 ## Usage
