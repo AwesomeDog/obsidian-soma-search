@@ -1,7 +1,7 @@
 {
   "id": "soma-search",
   "name": "Soma Search",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "minAppVersion": "1.13.0",
   "description": "Local-first AI search for your vault. Semantic, keyword & hybrid search across notes, PDFs, scanned docs, images (OCR + vision) and audio — 100% offline and private, powered by Soma.",
   "author": "AwesomeDog",
