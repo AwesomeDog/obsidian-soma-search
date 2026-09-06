@@ -164,8 +164,9 @@ function runSoma(command: string, args: string[], cwd: string): Promise<string> 
     cwd, encoding: "utf8", maxBuffer: 10 * 1024 * 1024, windowsHide: true
   }, (error, stdout, stderr) => {
     if (!error) return resolve(stdout);
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") return reject(error);
-    reject(new Error(stderr.trim() || stdout.trim() || error.message));
+    const failure: NodeJS.ErrnoException = error instanceof Error ? error : new Error(String(error));
+    if (failure.code === "ENOENT") return reject(failure);
+    reject(new Error(stderr.trim() || stdout.trim() || failure.message));
   }));
 }
 
@@ -192,7 +193,7 @@ async function waitForServer(port: number, failure: () => Error | undefined): Pr
     } catch {
       // The server has not bound the port yet.
     }
-    await new Promise((resolve) => setTimeout(resolve, 100));
+    await new Promise((resolve) => window.setTimeout(resolve, 100));
   }
   throw failure() ?? new Error("Timed out waiting for the local Soma server to become ready.");
 }
