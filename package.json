@@ -1,6 +1,6 @@
 {
   "name": "obsidian-soma-search",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "description": "Search an Obsidian vault through a managed local Soma server.",
   "author": "AwesomeDog",
