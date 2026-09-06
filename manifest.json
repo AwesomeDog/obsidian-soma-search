@@ -3,7 +3,7 @@
   "name": "Soma Search",
   "version": "0.1.2",
   "minAppVersion": "1.13.0",
-  "description": "Search the current vault through a managed local Soma server.",
+  "description": "Local-first AI search for Obsidian. Semantic, keyword & hybrid search across notes, PDFs, scanned docs, images (OCR + vision) and audio — 100% offline and private, powered by Soma.",
   "author": "AwesomeDog",
   "isDesktopOnly": true
 }
