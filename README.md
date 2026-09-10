@@ -12,6 +12,8 @@ Search **Markdown notes, PDF documents, scanned pages, images, and recorded audi
 
 > **Folders are not memory.** Memory returns as a phrase, an image, or a half-formed question — rarely as a file path. Soma Search gives every fragment an honest way back.
 
+<img src="docs/img/ss.png" alt="Soma Search">
+
 ---
 
 ## Table of contents
