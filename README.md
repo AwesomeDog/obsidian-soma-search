@@ -10,6 +10,9 @@
 
 Search **Markdown notes, PDF documents, scanned pages, images, and recorded audio** with **semantic (vector)**, **keyword (lexical)**, or **hybrid** search — without sending a single byte to the cloud.
 
+> [!WARNING]
+> **Memory-hungry by nature.** Processing **multimedia files — images, scanned pages/PDFs, and audio** (OCR, vision, speech-to-text) can need up to **24 GB of RAM** while extraction is active. On machines with less memory, multimedia files may fail to index or never show up in results. Markdown and text-based PDFs need far less. See [Requirements](#requirements).
+
 > **Folders are not memory.** Memory returns as a phrase, an image, or a half-formed question — rarely as a file path. Soma Search gives every fragment an honest way back.
 
 <img src="docs/img/ss.png" alt="Soma Search">
@@ -68,6 +71,8 @@ Soma indexes far more than plain text — everything lands in the **same index**
 - **Scanned or image-based content** — reads text with **OCR**
 - **Images and visual content** — understands content through **vision extraction**
 - **Recorded media** — turns **speech into searchable text**
+
+> **⚠️ Up to 24 GB of RAM** may be needed while multimedia extraction (OCR, vision, speech-to-text) is running.
 
 ### 🔒 Private by design
 
