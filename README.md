@@ -125,7 +125,7 @@ Soma indexes far more than plain text — everything lands in the **same index**
 winget install AwesomeDog.soma
 
 # macOS
-brew tap AwesomeDog/tap && brew trust AwesomeDog/tap && brew install AwesomeDog/tap/soma
+brew install AwesomeDog/tap/soma
 
 # Linux
 curl -fsSL https://github.com/AwesomeDog/soma/releases/latest/download/soma-linux-x64 -o soma
